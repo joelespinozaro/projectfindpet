@@ -1,0 +1,97 @@
+{
+  "project_info": {
+    "project_number": "226450208659",
+    "project_id": "pjct-findpet",
+    "storage_bucket": "pjct-findpet.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:226450208659:android:bcfce198fdd097fc0b5a66",
+        "android_client_info": {
+          "package_name": "com.bitpunchlab.android.pawsgo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "226450208659-hlhsrf333i1m88rosj9stiu6nrf5uhkj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIS5_hU0ZER340QaUxlRmwQYeF7a4_3Jc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "226450208659-hlhsrf333i1m88rosj9stiu6nrf5uhkj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:226450208659:android:33958d6ed8eb64d60b5a66",
+        "android_client_info": {
+          "package_name": "com.example.missingpets"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "226450208659-hlhsrf333i1m88rosj9stiu6nrf5uhkj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIS5_hU0ZER340QaUxlRmwQYeF7a4_3Jc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "226450208659-hlhsrf333i1m88rosj9stiu6nrf5uhkj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:226450208659:android:f735279917bf5dfd0b5a66",
+        "android_client_info": {
+          "package_name": "com.grupo3.projectfindpet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "226450208659-hlhsrf333i1m88rosj9stiu6nrf5uhkj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIS5_hU0ZER340QaUxlRmwQYeF7a4_3Jc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "226450208659-hlhsrf333i1m88rosj9stiu6nrf5uhkj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

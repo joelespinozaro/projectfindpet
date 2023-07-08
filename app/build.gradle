@@ -1,0 +1,83 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'com.google.gms.google-services'
+    id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
+    id 'kotlin-kapt'
+    id 'kotlin-parcelize'
+    id "org.jetbrains.kotlin.plugin.serialization"
+    id 'androidx.navigation.safeargs'
+}
+
+
+android {
+    namespace 'com.grupo3.projectfindpet'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.grupo3.projectfindpet"
+        minSdk 26
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            buildConfigField "String", "MAPS_API_KEY", '"AIzaSyDNt7il0DmFodHKgcuO2vHp7TPyUrgVpM8"'
+            buildConfigField "String", "API_KEY", '"AIzaSyDNt7il0DmFodHKgcuO2vHp7TPyUrgVpM8"'
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            buildConfigField "String", "MAPS_API_KEY", '"AIzaSyDNt7il0DmFodHKgcuO2vHp7TPyUrgVpM8"'
+            buildConfigField "String", "API_KEY", '"AIzaSyDNt7il0DmFodHKgcuO2vHp7TPyUrgVpM8"'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.5.2'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.5.2'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+
+    // firebase
+    implementation platform('com.google.firebase:firebase-bom:31.0.1')
+    // firebase auth
+    implementation 'com.google.firebase:firebase-auth'
+    // firestore
+    implementation 'com.google.firebase:firebase-firestore-ktx'
+    // cloud storage
+    implementation 'com.google.firebase:firebase-storage-ktx'
+    // serialization
+    implementation 'org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.1'
+    // Google Map
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
+    implementation 'com.google.android.libraries.places:places:2.5.0'
+
+    // Glide
+    implementation 'com.github.bumptech.glide:glide:4.14.2'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.14.2'
+
+    //room database
+    implementation 'androidx.room:room-runtime:2.5.0-alpha03'
+    kapt 'androidx.room:room-compiler:2.5.0-alpha03'
+
+    // serialization
+    implementation 'org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.1'
+}
